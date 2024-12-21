@@ -1,3 +1,0 @@
-make[2]: *** [CMakeFiles/turtlebot3_ros.dir/build.make:63: CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o] 中断
-make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/turtlebot3_ros.dir/all] 中断
-make: *** [Makefile:141: all] 中断
