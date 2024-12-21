@@ -1,0 +1,118 @@
+[0.208s] Invoking command in '/home/wl/Documents/ros2_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/wl/Documents/ros2_ws/install/turtlebot3_fake_node
+[0.423s] -- The C compiler identification is GNU 9.4.0
+[0.423s] -- The CXX compiler identification is GNU 9.4.0
+[0.423s] -- Check for working C compiler: /usr/bin/cc
+[0.423s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.423s] -- Detecting C compiler ABI info
+[0.423s] -- Detecting C compiler ABI info - done
+[0.423s] -- Detecting C compile features
+[0.423s] -- Detecting C compile features - done
+[0.424s] -- Check for working CXX compiler: /usr/bin/c++
+[0.490s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.491s] -- Detecting CXX compiler ABI info
+[0.573s] -- Detecting CXX compiler ABI info - done
+[0.585s] -- Detecting CXX compile features
+[0.588s] -- Detecting CXX compile features - done
+[0.589s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.607s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.607s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.757s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.779s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.784s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.842s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.873s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.934s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.002s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.055s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.086s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.087s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.087s] -- Looking for pthread.h
+[1.132s] -- Looking for pthread.h - found
+[1.132s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.178s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.178s] -- Looking for pthread_create in pthreads
+[1.215s] -- Looking for pthread_create in pthreads - not found
+[1.215s] -- Looking for pthread_create in pthread
+[1.258s] -- Looking for pthread_create in pthread - found
+[1.259s] -- Found Threads: TRUE  
+[1.353s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.401s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[1.409s] -- Found tf2_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_msgs/cmake)
+[1.547s] -- Found turtlebot3_msgs: 2.2.1 (/opt/ros/foxy/share/turtlebot3_msgs/cmake)
+[1.662s] -- Configuring done
+[1.670s] -- Generating done
+[1.671s] -- Build files have been written to: /home/wl/Documents/ros2_ws/build/turtlebot3_fake_node
+[1.678s] Invoked command in '/home/wl/Documents/ros2_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/wl/Documents/ros2_ws/install/turtlebot3_fake_node
+[1.681s] Invoking command in '/home/wl/Documents/ros2_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/wl/Documents/ros2_ws/build/turtlebot3_fake_node -- -j12 -l12
+[1.707s] [35m[1mScanning dependencies of target turtlebot3_fake_node[0m
+[1.734s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[3.179s] [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:[m[K In member function ‘[01m[Kvoid Turtlebot3Fake::init_parameters()[m[K’:
+[3.180s] [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:75:60:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebot3Fake::declare_parameter<std::string>(const char [19])[m[K’
+[3.180s]    75 |   this->declare_parameter<std::string>("joint_states_frame"[01;31m[K)[m[K;
+[3.180s]       |                                                            [01;31m[K^[m[K
+[3.180s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[3.180s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.180s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[3.180s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.180s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[3.180s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[3.180s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’
+[3.180s]   157 | [01;36m[KNode[m[K::declare_parameter(
+[3.180s]       | [01;36m[K^~~~[m[K
+[3.180s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[3.180s] [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:76:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebot3Fake::declare_parameter<std::string>(const char [11])[m[K’
+[3.180s]    76 |   this->declare_parameter<std::string>("odom_frame"[01;31m[K)[m[K;
+[3.180s]       |                                                    [01;31m[K^[m[K
+[3.180s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[3.180s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[3.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.181s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[3.181s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[3.181s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’
+[3.181s]   157 | [01;36m[KNode[m[K::declare_parameter(
+[3.181s]       | [01;36m[K^~~~[m[K
+[3.181s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[3.181s] [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:77:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebot3Fake::declare_parameter<std::string>(const char [11])[m[K’
+[3.181s]    77 |   this->declare_parameter<std::string>("base_frame"[01;31m[K)[m[K;
+[3.181s]       |                                                    [01;31m[K^[m[K
+[3.181s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[3.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[3.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.181s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[3.181s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[3.181s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’
+[3.181s]   157 | [01;36m[KNode[m[K::declare_parameter(
+[3.182s]       | [01;36m[K^~~~[m[K
+[3.182s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[3.182s] [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:78:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebot3Fake::declare_parameter<double>(const char [18])[m[K’
+[3.182s]    78 |   this->declare_parameter<double>("wheels.separation"[01;31m[K)[m[K;
+[3.182s]       |                                                      [01;31m[K^[m[K
+[3.182s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[3.182s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.182s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[3.182s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.182s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[3.182s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[3.182s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = double; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’
+[3.182s]   157 | [01;36m[KNode[m[K::declare_parameter(
+[3.182s]       | [01;36m[K^~~~[m[K
+[3.182s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[3.182s] [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:79:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebot3Fake::declare_parameter<double>(const char [14])[m[K’
+[3.182s]    79 |   this->declare_parameter<double>("wheels.radius"[01;31m[K)[m[K;
+[3.182s]       |                                                  [01;31m[K^[m[K
+[3.182s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[3.182s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.183s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[3.183s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.183s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[3.183s]                  from [01m[K/home/wl/Documents/ros2_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[3.183s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = double; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’
+[3.183s]   157 | [01;36m[KNode[m[K::declare_parameter(
+[3.183s]       | [01;36m[K^~~~[m[K
+[3.183s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:157:1:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[5.368s] make[2]: *** [CMakeFiles/turtlebot3_fake_node.dir/build.make:63：CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o] 错误 1
+[5.368s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/turtlebot3_fake_node.dir/all] 错误 2
+[5.368s] make: *** [Makefile:141：all] 错误 2
+[5.371s] Invoked command in '/home/wl/Documents/ros2_ws/build/turtlebot3_fake_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/wl/Documents/ros2_ws/build/turtlebot3_fake_node -- -j12 -l12
